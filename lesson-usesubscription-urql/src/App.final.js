@@ -11,7 +11,7 @@ subscription subscribeToComments($course_slug: String!) {
 }`
 
 function App() {
-  const course_slug = 'functional-programming-in-javascript-with-ramda-js'
+  const course_slug = 'usesubscription-example'
 
   const handleSubscription = (comments, response) =>
     console.log({comments, response}) || [...response.comments]

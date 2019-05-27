@@ -15,7 +15,7 @@ const addCommentToCourse = `
 const CommentInput = () => {
   const [text, setText] = React.useState('')
   const [res, executeMutation] = useMutation(addCommentToCourse)
-  const course_slug = 'functional-programming-in-javascript-with-ramda-js'
+  const course_slug = 'usesubscription-example'
 
   const handleInputChange = e => {
     setText(e.target.value)
