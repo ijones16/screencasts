@@ -10,7 +10,7 @@ const Menu = () => {
     if (isOpen) {
       firstLink.current.focus()
     }
-  }, [isOpen])
+  }, [isOpen]) // You may omit useRef container values from the deps because React guarantees them to be static. But it also doesn’t hurt to specify them.
   return (
     <>
       <button aria-expanded={isOpen} aria-haspopup="true" onClick={toggleOpen}>
